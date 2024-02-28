@@ -17,12 +17,14 @@ height: 780px;
     flex-direction: row;
 }
 .odin{
-    
-margin-top: 40%;
-    background-color: black;
-
+display: flex;
+   background-color: transparent;
     color: white;
 font-family: Norse-Bold;
+font-size:10ch;
+justify-content: center;
+align-items: center;
+
 
 }
 .right{
@@ -32,25 +34,27 @@ font-family: Norse-Bold;
 
 }
 .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+
     width: 30%;
+
+
+}
+.left-container {
+display: flex;
     background-image: url("leafplant.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
+
+
 }
 
 
 .footer{
-    margin: 5%;
 
-    margin-top: auto;
-    position: absolute;
-    width: 30%;
-    height: 2.5rem; 
     color: bisque;
+
 
     
 
