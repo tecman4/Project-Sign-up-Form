@@ -1,7 +1,7 @@
 *{
-    background-color: black;
+    background-color: white;
 
-height: 780px;
+
 }
 
 @font-face {
@@ -21,25 +21,19 @@ img{
     background-color: transparent;
 }
 .odin{
-display: flex;
-   background-color: rgba(0,0,0, .6);
+    display: flex;
+    background-color: rgba(0,0,0, .6);
     color: white;
-font-family: Norse-Bold;
-font-size:10ch;
-justify-content: center;
-align-items: center;
-height: 100px;
-width:600px;
-margin-top: 200px;
+    font-family: Norse-Bold;
+    font-size:10ch;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width:600px;
+    margin-top: 200px;
 
 }
-.right{
 
-    width: 1000px;
-    height:800px;
-    background-color: white;
-
-}
 .left {
     display: flex;
     background-image: url("leafplant.jpg");
@@ -48,27 +42,97 @@ margin-top: 200px;
     flex-direction: column;
     width:600px;
     height:800px;
-
-
-
 }
-
-
-
 .footer{
     margin-top: 480px;;
     background-color: transparent;
     bottom: 0%;
     color: rgb(51, 51, 50);
     height:10px;
-    width: 600px;
-    margin-left: 180px;
-
-
-    
-
+    width: 500px;
+    margin-left: 100px;
 }
 a:link, a:visited{
     color: rgb(51, 51, 50);
     background-color: transparent;
+}
+.right{
+    width: 1000px;
+    height:700px;
+    background-color: white;
+
+}
+.text{
+    padding: 30px;
+}
+.text, .text1 , .formtext1
+{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bolder;
+    width:1000px;
+    height: 30px;
+    padding:0;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size:20px;
+    background-color:rgb(238, 238, 238);
+}
+.text1, .formtext1{
+    padding-top: 30px;
+
+}
+.formtext1{
+padding-top: 30px;
+font-family:Arial, Helvetica, sans-serif ;
+font-weight: bolder;
+
+}
+.formtext1, .formtext{
+    background-color: white;
+    height: 50px;
+    width: 960px;
+
+}
+.createAccount{
+height:190px;
+background-color:#596D48;
+width: 200px;
+height: 50px;
+font-weight:bold ;
+
+}
+form{
+    position: absolute;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 30px;
+    width: 500px;
+}
+
+form input{
+    background-color: white;
+    height: 20px;
+    width: 200px;
+    margin-bottom: 10px;
+
+}
+#form-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2.5rem;
+    margin-top: 1em;
+    
+
+}
+.item{
+    width: 50%;
+}
+.create{
+    height: 260px;
+    width:800px;
+    background-color: red;
 }
