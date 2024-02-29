@@ -16,49 +16,59 @@ height: 780px;
     display: flex;
     flex-direction: row;
 }
+img{
+    height: 100px;
+    background-color: transparent;
+}
 .odin{
 display: flex;
-   background-color: transparent;
+   background-color: rgba(0,0,0, .6);
     color: white;
 font-family: Norse-Bold;
 font-size:10ch;
 justify-content: center;
 align-items: center;
-
+height: 100px;
+width:600px;
+margin-top: 200px;
 
 }
 .right{
 
-    width: 80%;
+    width: 1000px;
+    height:800px;
     background-color: white;
 
 }
 .left {
-
-
-    width: 30%;
-
-
-}
-.left-container {
-display: flex;
+    display: flex;
     background-image: url("leafplant.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
+    width:600px;
+    height:800px;
+
 
 
 }
 
 
-.footer{
 
-    color: bisque;
+.footer{
+    margin-top: 480px;;
+    background-color: transparent;
+    bottom: 0%;
+    color: rgb(51, 51, 50);
+    height:10px;
+    width: 600px;
+    margin-left: 180px;
 
 
     
 
 }
 a:link, a:visited{
-    color: bisque;
+    color: rgb(51, 51, 50);
+    background-color: transparent;
 }
