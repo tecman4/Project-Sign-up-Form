@@ -162,3 +162,9 @@ input{
 input:focus {
     border:3px solid blue;
 }
+#emessage{
+    background-color: white;
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}

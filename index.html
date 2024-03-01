@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Sign-up Form</title>
+    <script>
+        function passcheck(){
+            let password = document.getElementById('password').value;
+            let Cpassword = document.getElementById('Cpassword').value;
+            let emessage = document.getElementById('emessage');
+            if(password !=Cpassword){
+                emessage.textContent = "Passwords does not match"
+                alert("Password does not match")
+            } else {
+                emessage.textContent = ""; // Clear the message if passwords match
+            }
+        }
+
+    </script>
 </head>
 <body>
     <div class="flex">
@@ -20,6 +34,7 @@
 
         </div>
         <div class="right">
+            
 
             <div class="text1">This is not a real online service. You know you need something </div>
             <div class="text">like this in your life to help you realize your deepest dreams.</div>
@@ -32,33 +47,34 @@
                 <div id="form-flex">
                     <div class="item">
                         <label for="fname" >First name </label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname" minlength="1">
                     </div>
                     <div class="item">
                         <label for="lname" >Last name </label>
-                        <input type="text" id="lname" name="lname" >
+                        <input type="text" id="lname" name="lname" minlength="1">
                     </div>
                     <div class="item">
                         <label for="email">Email </label>
-                        <input type="text" id="email" name="email" placeholder="example@domain.com">
+                        <input type="email" id="email" name="email" placeholder="example@domain.com">
                     </div>
                     <div class="item">
                         <label for="phone">Phone Number </label>
-                        <input type="text" id="phone" name="phone" placeholder="555-555-5555">
+                        <input type="text" id="phone" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                     <div class="item">
                         <label for="password">Password </label>
                         <input type="password" id="password" name="password" class="error">
+                        <div id="emessage"></div>
                     </div>
                     <div class="item">
-                        <label for="CPassword">Confirm Password </label>
-                        <input type="text" id="Cpassword" name="Cpassword" class="error">
+                        <label for="Cpassword">Confirm Password </label>
+                        <input type="password" id="Cpassword" name="Cpassword" class="error">
                     </div>
             </div>
             <div class="create">
             <br><br><br><br>
 
-                <input type="submit" value="Create Account" class="createAccount">
+                <input type="submit" value="Create Account" class="createAccount" onclick="passcheck()">
                 <br>Already have an account? <a href="https://www.theodinproject.com/">Log in</a>
             </div>
             </form>
